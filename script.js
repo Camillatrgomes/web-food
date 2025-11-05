@@ -1,25 +1,15 @@
+const dark = document.getElementsByClassName("dark");
+const light = document.getElementsByClassName("light");
 
 
+function btnLight() {
+document.body.classList.remove("dark");
+document.body.classList.add("light");
 
+}
 
+function btnDark() {
+document.body.classList.remove("light");
+document.body.classList.add("dark");
 
-
-
-
-
-
-
-
-async function Get (cep) {
-
-    document.getElementById(cep)
-    const Bruto = `https//viacep.com.br/ws/${cep}/json`
-    Bruto = cep
-    console.log(Bruto)
-    try{
-   
-    }
-    catch(error) {
-    console.log(error)
- }
 }

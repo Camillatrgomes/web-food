@@ -1,6 +1,27 @@
-body {
-    background-color: blanchedalmond;
+.dark{
+    --bg1: #141f07;
+    --p: #ffffff;
+    --titule: #ce982c; 
+    --nav: #4d791a; 
+}
 
+.light{
+    --bg1: #f3e8c1;
+    --p: #353333; 
+    --titule: #4d791a;
+    --nav: #FFBE3B; 
+}
+
+body{
+
+    background-color: var(--bg1);
+}
+
+p{
+    color: var(--p);
+}
+h1 {
+    color: var(--titule);
 }
 
 .row {
@@ -12,7 +33,6 @@ margin-top: 150px;
 margin-bottom: 150px;
 
 }
-.nav {
-background-color: rgb(241, 229, 128) !important;
-
+header {
+background-color: var(--nav) !important;
 }
