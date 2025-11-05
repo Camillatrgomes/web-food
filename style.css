@@ -3,13 +3,14 @@
     --p: #ffffff;
     --titule: #ebc640; 
     --nav: #f0dfa2; 
+    
 }
 
 .light{
     --bg1: #f3e8c1;
     --p: #373636; 
     --titule:#198754;
-    --nav: #FFBE3B;     
+    --nav: #FFBE3B; 
 }
 
 body{
@@ -18,10 +19,14 @@ body{
 }
 
 p{
-    font-style: strong;
     color: var(--p);
 }
-h1 {
+
+.card-text {
+    color: #373636 !important;
+}
+
+h1, h2, h3 {
     color: var(--titule);
 }
 
@@ -38,6 +43,13 @@ margin-bottom: -100px;
 }
 header {
 background-color: var(--nav) !important;
+}
+.nav-link:hover {
+color: #ffffff !important;
+} 
+
+.card-height {
+height: 90%;
 }
 
 .custom-shape-divider-bottom-1762367776 {
@@ -64,9 +76,58 @@ background-color: var(--nav) !important;
     fill: #F5A623;
 }
 
-
+.caixa-ia {
+position: relative;
+display: inline-block;
+ 
+}
+ 
+ 
+ 
+.overlay-ia {
+position: absolute;
+bottom: 10px;
+right: 10px;
+color: white;
+padding: 4px 8px;
+border-radius: 4px;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial, sans-serif;
+z-index: 1;
+}
+ 
+.overlay-ia::after {
+position: absolute;
+bottom: 100%;
+left: 50%;
+transform: translateX(-50%);
+margin-bottom: 5px;
+ 
+color: white;
+padding: 6px 10px;
+border-radius: 4px;
+font-size: 12px;
+white-space: nowrap;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.3s ease, visibility 0.3s ease;
+ 
+z-index: 2;
+}
+ 
+ 
+.overlay-ia:hover::after {
+opacity: 1;
+visibility: visible;
+}
+ 
+ 
 @media (max-width: 768px) {
-    .row {
+.row {
         margin: 20px;
     }
+.overlay-ia::after {
+display: none;
+}
 }
