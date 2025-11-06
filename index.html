@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Início</a>
+              <a class="nav-link active" aria-current="page" href="#home">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
+              <a class="nav-link active" aria-current="page" href="#cardapio">Cardápio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Variações</a>
+              <a class="nav-link active" aria-current="page" href="#">Novidades</a>
             </li>
           </ul>
           <button class="dark btn btn-outline-success btn-sm mx-2" onclick="btnDark()"><i class="fa-solid fa-moon"></i></button>
@@ -38,7 +38,7 @@
   <div class="d-lg-none d-lg-block">
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-burger"> Food</i></a>
+        <a class="navbar-brand" href="#home"><i class="fa-solid fa-burger"> Food</i></a>
              <button class="dark btn btn-outline-success btn-sm" onclick="btnDark()"><i class="fa-solid fa-moon"></i></button>
           <button class="light btn btn-outline-success btn-sm" onclick="btnLight()"><i class="fa-solid fa-sun"></i></i></button>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -52,13 +52,13 @@
           <div class="offcanvas-body mx-auto">
             <ul class="navbar-nav justify-content-center text-center py-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                <a class="nav-link active" aria-current="page" href="#home">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
+                <a class="nav-link active" aria-current="page" href="#cardapio">Cardápio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Variações</a>
+                <a class="nav-link active" aria-current="page" href="#">Novidades</a>
               </li>
             </ul>
             <button class="btn btn-success" href="#">Peça seu pedido</button>
@@ -69,32 +69,39 @@
   </div>
 </header>
 <body class="light">
-  <div class="row">
+  <article class="my-5" id="home">
+    <div class="row min-vh-100">
     <div class="col-sm-12 col-lg-6 pb-4">
     <h1><strong>O sabor que vai até você</strong></h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laborum laboriosam alias esse sint veniam
       rerum accusantium quis iusto. Nulla quod repudiandae voluptatum commodi doloribus dolores, praesentium nisi
       minima. Ipsam.</p>
     <div class="grid">
-      <button class="btn btn-outline-success" href="#">Ver Cardápio</button>
+      <button class="btn btn-outline-success" href="#cardapio">Ver Cardápio</button>
 
       <button class="btn btn-success" href="#"><i class="fa-solid fa-phone"></i> 11 9999-000</button>
     </div>
     <div class="grid pt-3">
-   <a href="#"><i class="fa-brands fa-whatsapp px-3"></i></a> 
-   <a href="#"><i class="fa-brands fa-instagram px-3"></i></a> 
- <a href="#"><i class="fa-brands fa-facebook px-3"></i></a> 
+  <a href="#"><i class="fa-brands fa-whatsapp px-3 icon"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram px-3 icon"></i></a>
+  <a href="#"><i class="fa-brands fa-facebook px-3 icon"></i></a>
     </div>
     </div>
     <div class="col-sm-12 col-lg-6">
       <img src="src/hero.png" alt="comida">
     </div>
   </div>
+  </article>
   <article style="background-color: var(--nav);">
-    <!--svg onda-->
+<svg id="Camada_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200 120">
+  <rect class="st0" y="-7.69" width="1206.71" height="138.34" />
+  <path class="st1"
+    d="M321.39,61.48c58-11.75,114.16-32.82,172-45.6,82.39-18.21,168.19-19.31,250.45-.42,79.94,18.31,162.83,62.97,241.82,85.66,70.05,20.13,146.53,28.42,214.34,3.27V0H0v29.79c102.47,42.32,213.61,53.28,321.39,31.69Z" />
+</svg>
+
       <div class="row">
-     <h3>Cardápio</h3>
-    <p><strong>Nossos pratos especiais</strong></p>
+    <h3 id="cardapio">Cardápio</h3>
+    <p class="p-fundo-claro"><strong>Nossos pratos especiais</strong></p>
     <div class="col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
@@ -105,13 +112,16 @@
   </button>
 </div>
 </div>
-  <div class="card-body ">
+  <div class="card-body">
     <h5 class="card-title">Feijoada Completa</h5>
     <p class="card-text">Descrição: Feijão preto cozido com paio, linguiça calabresa, costela, carne seca e lombo. Acompanha arroz, farofa, couve e laranja.</p>
-      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i><br>
       <button href="#" class="btn btn-success my-3">
-        <i class="fa-solid fa-cart-shopping"></i> Peça Já</button>
+        <i class="fa-solid fa-cart-shopping"></i> R$39,50</button>
   </div>
 </div>
     </div>
@@ -128,9 +138,13 @@
   <div class="card-body ">
     <h5 class="card-title">Salmão Grelhado Tropical</h5>
     <p class="card-text">Descrição: Filé de salmão grelhado na manteiga com ervas, purê de batata-baroa, legumes salteados e molho de maracujá agridoce.</p>
-    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i><br>
       <button href="#" class="btn btn-success my-3">
-        <i class="fa-solid fa-cart-shopping"></i> Peça Já</button>
+        <i class="fa-solid fa-cart-shopping"></i> R$32,00</button>
   </div>
 </div>
     </div>
@@ -147,10 +161,13 @@
   <div class="card-body ">
     <h5 class="card-title">Parmegiana de Frango</h5>
     <p class="card-text">Descrição: Frango empanado e frito coberto com molho de tomate, presunto e muçarela gratinada. Vem com espaguete ao sugo e batata palito.</p>
-        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-          class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i><br>
         <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> Peça Já</button>
+          <i class="fa-solid fa-cart-shopping"></i> R$28,99</button>
   </div>
 </div>
     </div>
@@ -167,10 +184,13 @@
 <div class="card-body">
     <h5 class="card-title">Bobó de Camarão Cremoso</h5>
     <p class="card-text">Descrição: Camarões refogados no dendê com cebola, pimentão e coentro no creme de mandioca. Acompanha arroz branco e farofa de camarão.</p>
-        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-          class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><br>
         <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> Peça Já</button>
+          <i class="fa-solid fa-cart-shopping"></i> R$42,80</button>
   </div>
 </div>
     </div>
@@ -187,10 +207,13 @@
 <div class="card-body">
     <h5 class="card-title">Risoto de Funghi Seco</h5>
     <p class="card-text">Descrição: Arroz arbóreo cremoso com funghi seco, vinho branco, parmesão e manteiga trufada. Finalizado com cebolinha fresca.</p>
-        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-          class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i><br>
         <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> Peça Já</button>
+          <i class="fa-solid fa-cart-shopping"></i> R$36,99</button>
   </div>
 </div>
     </div>
@@ -204,16 +227,72 @@
   </button>
 </div>
 </div>
-  <div class="card-body ">
+  <div class="card-body">
     <h5 class="card-title">Picadinho à Brasileira</h5>
     <p class="card-text">Descrição: Cubos de filé mignon refogados com cebola, alho e tomate. Vem com feijão preto, banana à milanesa, ovo frito e arroz.</p>
-        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-          class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i><br>
         <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> Peça Já</button>
+          <i class="fa-solid fa-cart-shopping"></i> R$32,45</button>
+          </div>
+          </div>
+          </div>
+          </div>
+                <svg id="Camada_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200 120">
+  <rect class="st2" y="-7.69" width="1206.71" height="138.34" />
+  <path class="st3"
+    d="M321.39,61.48c58-11.75,114.16-32.82,172-45.6,82.39-18.21,168.19-19.31,250.45-.42,79.94,18.31,162.83,62.97,241.82,85.66,70.05,20.13,146.53,28.42,214.34,3.27V0H0v29.79c102.47,42.32,213.61,53.28,321.39,31.69Z" />
+</svg>
+  </article>
+          <article class=" my-5 min-vh-100"  style="background-color: var(--bg3);">
+            <div class="row d-flex grid justify-content-center align-items-center">
+              <div class="col-sm-12 col-lg-6">
+                <img src="src/chef.png" alt="" class="py-5 mx-auto" style="max-width: 500px;">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <p class="h-fundo-escuro"><strong>Depoimentos</strong></p>
+                <h3 class="h-fundo-escuro pb-5"><em>O que os clientes falam sobre nós</em></h3>
+               <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote grid d-flex justify-content-center align-items-center">
+            <img src="src/avatar.png" alt="" class="img-fluid mx-3">
+      <p class="p-fundo-claro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iusto amet recusandae neque hic voluptates impedit ipsum ratione voluptatibus.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer pt-3">
+        Laura Silva
+      </figcaption>
+    </figure>
   </div>
 </div>
-     </div>
+<div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote grid d-flex justify-content-center align-items-center">
+            <img src="src/avatar.png" alt="" class="img-fluid mx-3">
+      <p class="p-fundo-claro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iusto amet recusandae neque hic voluptates impedit ipsum ratione voluptatibus.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer pt-3">
+        Adriana Santos  
+      </figcaption>
+    </figure>
+  </div>
+</div>
+              </div>
+            </div>
+  </article>
+  <article class="my-5 min-vh-100" id="novidades">
+    <div class="row">
+    <h2>Falta pouco para lançarmos um prato novo</h2>
+    <p>Venha acompanhar com a gente!</p>
+    <div class="container">
+      <div class="clock"></div>
+    </div>
+    </div>
+  </article>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
