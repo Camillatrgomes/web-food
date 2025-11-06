@@ -9,6 +9,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <script src="script.js"></script>
+  <link rel="shortcut icon" href="src/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <header>
@@ -73,9 +74,8 @@
     <div class="row min-vh-100">
     <div class="col-sm-12 col-lg-6 pb-4">
     <h1><strong>O sabor que vai até você</strong></h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laborum laboriosam alias esse sint veniam
-      rerum accusantium quis iusto. Nulla quod repudiandae voluptatum commodi doloribus dolores, praesentium nisi
-      minima. Ipsam.</p>
+    <p>Aqui a comida é feita com carinho de vó, tempero de casa e aquela vontade louca de te ver sorrir na primeira garfada. 
+    Pratos generosos, ingredientes frescos e o melhor da culinária brasileira servidos com amor todos os dias.</p>
     <div class="grid">
       <button class="btn btn-outline-success" href="#cardapio">Ver Cardápio</button>
 
@@ -255,15 +255,19 @@
               <div class="col-sm-12 col-lg-6">
                 <p class="h-fundo-escuro"><strong>Depoimentos</strong></p>
                 <h3 class="h-fundo-escuro pb-5"><em>O que os clientes falam sobre nós</em></h3>
+                <div class="d-none d-md-block d-lg-block">
                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
   <div class="card-body">
     <figure>
       <blockquote class="blockquote grid d-flex justify-content-center align-items-center">
+        
             <img src="src/avatar.png" alt="" class="img-fluid mx-3">
-      <p class="p-fundo-claro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iusto amet recusandae neque hic voluptates impedit ipsum ratione voluptatibus.</p>
+      <p class="p-fundo-claro">Gente, essa feijoada é a coisa mais perfeita que já comi na vida! Parece que minha
+                        avó ressuscitou só pra cozinhar pra mim. A carne seca derrete na boca e a couve… meu Deus, que couve é
+                        essa?! Volto toda semana</p>
       </blockquote>
       <figcaption class="blockquote-footer pt-3">
-        Laura Silva
+        Mariana Costa
       </figcaption>
     </figure>
   </div>
@@ -273,30 +277,91 @@
     <figure>
       <blockquote class="blockquote grid d-flex justify-content-center align-items-center">
             <img src="src/avatar.png" alt="" class="img-fluid mx-3">
-      <p class="p-fundo-claro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iusto amet recusandae neque hic voluptates impedit ipsum ratione voluptatibus.</p>
+      <p class="p-fundo-claro">Pedi o salmão tropical por curiosidade e agora tô viciado. O molho de maracujá com o
+                        peixe na chapa é tipo um luau dentro do prato! Atendimento nota 10, entrega rapidinha e ainda mandaram um
+                        bilhetinho escrito à mão.</p>
       </blockquote>
       <figcaption class="blockquote-footer pt-3">
-        Adriana Santos  
+        João Pedro Silva  
       </figcaption>
     </figure>
   </div>
 </div>
               </div>
             </div>
+            </div>
+            <!--Mobile card-->
+            <div class="row col-sm-10 d-md-none d-lg-none">
+              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="card-body">
+                  <figure>
+                    <blockquote class="blockquote">
+            
+                      <img src="src/avatar.png" alt="" class="img-fluid mx-3">
+                      <p class="p-fundo-claro">Gente, essa feijoada é a coisa mais perfeita que já comi na vida! Parece que minha
+                        avó ressuscitou só pra cozinhar pra mim. A carne seca derrete na boca e a couve… meu Deus, que couve é
+                        essa?! Volto toda semana</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer pt-3">
+                      Mariana Costa
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="card-body">
+                  <figure>
+                    <blockquote class="blockquote">
+                      <img src="src/avatar.png" alt="" class="img-fluid mx-3">
+                      <p class="p-fundo-claro">Pedi o salmão tropical por curiosidade e agora tô viciado. O molho de maracujá com o
+                        peixe na chapa é tipo um luau dentro do prato! Atendimento nota 10, entrega rapidinha e ainda mandaram um
+                        bilhetinho escrito à mão.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer pt-3">
+                      João Pedro Silva
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            </div>
   </article>
   <article class="my-5 min-vh-100" id="novidades">
-    <div class="row">
-    <h2>Falta pouco para lançarmos um prato novo</h2>
-    <p>Venha acompanhar com a gente!</p>
-    <div class="container">
-      <div class="clock"></div>
+    
+    <div class="row grid d-flex align-items-center justify-content-center text-center">
+      <div class="col-sm-12 col-lg-6 text-center">
+        <br>
+        <h2 class="h-fundo-escuro">Falta pouco para lançarmos um prato novo!</h2>
+                <p>Quer tentar adivinhar qual vai ser? <br>
+Deixa seu palpite aqui embaixo!</p>
+<div class="pb-5 mx-auto" style="max-width: 500px;">
+<div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-burger"></i></span>
+  <input type="text" class="form-control" placeholder="Meu palpite é..." aria-label="Meu palpite é..." aria-describedby="addon-wrapping">
+  <button class="btn btn-success" type="submit">Enviar palpite</button>
+</div>
+</div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+      <img src="src/desenho.png" alt="" class="mx-auto pt-5 img-desenho">
+      </div>
     </div>
+    <div class="row align-items-center justify-content-center text-center py-5">
+        <h3 class="h-fundo-escuro">Venha acompanhar com a gente!</h3>
+        <p><em>O resultado sai dia 22 de Dezembro de 2025</em></p>
+        <div class="clock mx-auto"></div>
+      </div>
     </div>
+        </div>
   </article>
+    <footer class="text-center py-4" style="background-color: var(--bg2);">
+      <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+      <p>Contato: <a href="mailto:contato@minhaempresa.com">contato@minhaempresa.com</a></p>
+    
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>

@@ -16,6 +16,7 @@ document.body.classList.add("dark");
 
 const getHours = () => {
     const clock = document.getElementsByClassName("clock")[0]
+    
     const date = new Date()
     const hours = date.getHours()
     const minutes = date.getMinutes()
