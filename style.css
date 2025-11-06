@@ -64,6 +64,13 @@ align-items: center;
 
 header {
 background-color: var(--nav) !important;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 100;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link:hover {
@@ -142,7 +149,7 @@ visibility: visible;
    align-items: center;
    border: 4px  dotted   var(--titule);
    border-radius: 3%;
-   color: var(--p);
+   color: var(--p2);
    display: flex;
    font-size: 80px;
    justify-content: center;
