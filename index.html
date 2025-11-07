@@ -29,8 +29,8 @@
               <a class="nav-link active" aria-current="page" href="#novidades">Novidades</a>
             </li>
           </ul>
-          <button class="dark btn btn-outline-success btn-sm mx-2" onclick="btnDark()"><i class="fa-solid fa-moon"></i></button>
-          <button class="light btn btn-outline-success btn-sm" onclick="btnLight()"><i class="fa-solid fa-sun"></i></i></button>
+          <button class="dark btn btn-outline-success btn-sm mx-2 " onclick="btnDark()" ><i class="fa-solid fa-moon"></i></button>
+          <button class="light btn btn-outline-success btn-sm"  onclick="btnLight()" ><i class="fa-solid fa-sun"></i></i></button>
           <a class="btn btn-success m-2" href="pagina2.html" >Peça seu pedido</a>
         </div>
       </div>
@@ -40,12 +40,15 @@
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home"><i class="fa-solid fa-burger"> Food</i></a>
+        <div class="grid ml-5">
              <button class="dark btn btn-outline-success btn-sm" onclick="btnDark()"><i class="fa-solid fa-moon"></i></button>
           <button class="light btn btn-outline-success btn-sm" onclick="btnLight()"><i class="fa-solid fa-sun"></i></i></button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+       
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        </div>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -102,7 +105,7 @@
       <div class="row">
     <h3 id="cardapio">Cardápio</h3>
     <p class="p-fundo-claro"><strong>Nossos pratos especiais</strong></p>
-    <div class="col-sm-12 col-lg-4 pb-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
 <img src="/src/img/feijoada.jpg" class="card-img-top rounded" alt="comida ilustrativa">
@@ -125,7 +128,7 @@
   </div>
 </div>
     </div>
-     <div class="col-sm-12 col-lg-4 pb-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
 <img src="/src/img/salmao.jpg" class="card-img-top rounded" alt="comida ilustrativa">
@@ -148,7 +151,7 @@
   </div>
 </div>
     </div>
-    <div class="col-sm-12 col-lg-4 pb-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
 <img src="/src/img/parmegiana.jpg" class="card-img-top rounded" alt="comida ilustrativa">
@@ -171,7 +174,7 @@
   </div>
 </div>
     </div>
-     <div class=" col-sm-12 col-lg-4 pb-4">
+    <div class=" col-sm-12 col-md-6 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
 <img src="/src/img/camarao.jpg" class="card-img-top rounded" alt="comida ilustrativa">
@@ -194,7 +197,7 @@
   </div>
 </div>
     </div>
-    <div class=" col-sm-12 col-lg-4 pb-4">
+    <div class=" col-sm-12 col-md-6 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
 <img src="/src/img/risoto.jpg" class="card-img-top rounded" alt="comida ilustrativa">
@@ -217,7 +220,7 @@
   </div>
 </div>
     </div>
-     <div class="col-sm-12 col-lg-4 pb-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
 <img src="/src/img/carne.jpg" class="card-img-top rounded" alt="comida ilustrativa">
@@ -328,19 +331,40 @@
             </div>
             </div>
   </article>
-  <article class="my-5 min-vh-100" id="novidades">
+  <article class="mt-5 min-vh-100" id="novidades">
     
     <div class="row grid d-flex align-items-center justify-content-center text-center">
       <div class="col-sm-12 col-lg-6 text-center">
         <br>
         <h2 class="h-fundo-escuro">Falta pouco para lançarmos um prato novo!</h2>
                 <p>Quer tentar adivinhar qual vai ser? <br>
+                  Os 5 primeiros que acertarem, vão ganhar de cortesia! <br>
 Deixa seu palpite aqui embaixo!</p>
-<div class="pb-5 mx-auto" style="max-width: 500px;">
+<div class=" mx-auto" style="max-width: 500px;">
 <div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-burger"></i></span>
-  <input type="text" class="form-control" placeholder="Meu palpite é..." aria-label="Meu palpite é..." aria-describedby="addon-wrapping">
-  <button class="btn btn-success" type="submit">Enviar palpite</button>
+  <input type="text" class="form-control" id="campoTexto" oninput="verificarTexto()" placeholder="Meu palpite é...">
+
+<button type="button" class="btn btn-success" id="meuBotao" disabled data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Enviar palpite
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Seu palpite foi registrado!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Agora é só <strong>cruzar os dedinhos</strong> e torcer pra ser um dos 5 primeiros que acertarem!
+<br>        Boa sorte! Te esperamos no dia do lançamento com o prato quentinho e seu nome na lista VIP!
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </div>
       </div>
@@ -357,9 +381,10 @@ Deixa seu palpite aqui embaixo!</p>
 </svg>
 
       <div class="row">    
-        <div class="align-items-center justify-content-center text-center py-5">
+        <div class="align-items-center justify-content-center text-center pb-5">
         <h3>Venha acompanhar com a gente!</h3>
         <p class="p-fundo-claro"><em>O resultado sai dia 22 de Dezembro de 2025</em></p>
+        <iframe id="online-alarm-kur-iframe" src="https://embed-countdown.onlinealarmkur.com/pt/#2026-01-01T00:00:00@America%2FSao_Paulo" width="360" height="80" style="display: block; margin: 0px auto; border: 0px;"></iframe>
         <div class=" clock mx-auto"></div>
       </div>
     </div>

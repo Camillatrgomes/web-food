@@ -95,10 +95,10 @@ height: 90%;
 .st3 {
         fill: var(--bg2);
       }
-.vr {
 
+.ml-n5 {
+    margin-left: 30px;
 }
-
 .caixa-ia {
 position: relative;
 display: inline-block;
