@@ -8,15 +8,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-  <script src="script.js"></script>
-  <link rel="shortcut icon" href="src/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <script src="src/javaScript/script.js"></script>
+  <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/style/style.css">
 </head>
 <header>
 <div class="shadow d-none d-sm-block d-md-block">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand mx-5" href="#"><i class="fa-solid fa-burger"> Food</i></a>
+        <a class="navbar-brand mx-5" href="#home"><i class="fa-solid fa-burger"> Food</i></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -26,12 +26,12 @@
               <a class="nav-link active" aria-current="page" href="#cardapio">Cardápio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+              <a class="nav-link active" aria-current="page" href="#novidades">Novidades</a>
             </li>
           </ul>
           <button class="dark btn btn-outline-success btn-sm mx-2" onclick="btnDark()"><i class="fa-solid fa-moon"></i></button>
           <button class="light btn btn-outline-success btn-sm" onclick="btnLight()"><i class="fa-solid fa-sun"></i></i></button>
-          <button class="btn btn-success m-2" href="#">Peça seu pedido</button>
+          <a class="btn btn-success m-2" href="pagina2.html" >Peça seu pedido</a>
         </div>
       </div>
     </nav>
@@ -59,10 +59,10 @@
                 <a class="nav-link active" aria-current="page" href="#cardapio">Cardápio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+                <a class="nav-link active" aria-current="page" href="#novidades">Novidades</a>
               </li>
             </ul>
-            <button class="btn btn-success" href="#">Peça seu pedido</button>
+            <a class="btn btn-success" href="pagina2.html">Peça seu pedido</a>
           </div>
         </div>
       </div>
@@ -77,18 +77,18 @@
     <p>Aqui a comida é feita com carinho de vó, tempero de casa e aquela vontade louca de te ver sorrir na primeira garfada. 
     Pratos generosos, ingredientes frescos e o melhor da culinária brasileira servidos com amor todos os dias.</p>
     <div class="grid">
-      <button class="btn btn-outline-success" href="#cardapio">Ver Cardápio</button>
+      <a class="btn btn-outline-success" href="#cardapio">Ver Cardápio</a>
 
-      <button class="btn btn-success" href="#"><i class="fa-solid fa-phone"></i> 11 9999-000</button>
+      <a class="btn btn-success" href="https://www.whatsapp.com/" target="_blank"><i class="fa-solid fa-phone"></i> 11 9999-000</a>
     </div>
     <div class="grid pt-3">
-  <a href="#"><i class="fa-brands fa-whatsapp px-3 icon"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram px-3 icon"></i></a>
-  <a href="#"><i class="fa-brands fa-facebook px-3 icon"></i></a>
+  <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp px-3 icon"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram px-3 icon"></i></a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook px-3 icon"></i></a>
     </div>
     </div>
     <div class="col-sm-12 col-lg-6">
-      <img src="src/hero.png" alt="comida">
+      <img src="src/img/hero.png" alt="comida">
     </div>
   </div>
   </article>
@@ -105,11 +105,11 @@
     <div class="col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
-<img src="/src/feijoada.jpg" class="card-img-top rounded" alt="comida ilustrativa">
+<img src="/src/img/feijoada.jpg" class="card-img-top rounded" alt="comida ilustrativa">
 <div class="overlay-ia">
-  <button href="#" class="btn btn-success">
+  <a href="pagina2.html" class="btn btn-success">
     <i class="fa-regular fa-heart"></i>
-  </button>
+  </a>
 </div>
 </div>
   <div class="card-body">
@@ -120,19 +120,19 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-regular fa-star"></i><br>
-      <button href="#" class="btn btn-success my-3">
-        <i class="fa-solid fa-cart-shopping"></i> R$39,50</button>
+      <a href="pagina2.html" class="btn btn-success my-3">
+        <i class="fa-solid fa-cart-shopping"></i> R$39,50</a>
   </div>
 </div>
     </div>
      <div class="col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
-<img src="/src/salmao.jpg" class="card-img-top rounded" alt="comida ilustrativa">
+<img src="/src/img/salmao.jpg" class="card-img-top rounded" alt="comida ilustrativa">
 <div class="overlay-ia">
-  <button href="#" class="btn btn-success">
+  <a href="pagina2.html" class="btn btn-success">
     <i class="fa-regular fa-heart"></i>
-  </button>
+  </a>
 </div>
 </div>
   <div class="card-body ">
@@ -143,19 +143,19 @@
     <i class="fa-regular fa-star"></i>
     <i class="fa-regular fa-star"></i>
     <i class="fa-regular fa-star"></i><br>
-      <button href="#" class="btn btn-success my-3">
-        <i class="fa-solid fa-cart-shopping"></i> R$32,00</button>
+      <a href="pagina2.html" class="btn btn-success my-3">
+        <i class="fa-solid fa-cart-shopping"></i> R$32,00</a>
   </div>
 </div>
     </div>
     <div class="col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
-<img src="/src/parmegiana.jpg" class="card-img-top rounded" alt="comida ilustrativa">
+<img src="/src/img/parmegiana.jpg" class="card-img-top rounded" alt="comida ilustrativa">
 <div class="overlay-ia">
-  <button href="#" class="btn btn-success">
+  <a href="pagina2.html" class="btn btn-success">
     <i class="fa-regular fa-heart"></i>
-  </button>
+  </a>
 </div>
 </div>
   <div class="card-body ">
@@ -166,19 +166,19 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-regular fa-star"></i>
         <i class="fa-regular fa-star"></i><br>
-        <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> R$28,99</button>
+        <a href="pagina2.html" class="btn btn-success my-3">
+          <i class="fa-solid fa-cart-shopping"></i> R$28,99</a>
   </div>
 </div>
     </div>
      <div class=" col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
-<img src="/src/camarao.jpg" class="card-img-top rounded" alt="comida ilustrativa">
+<img src="/src/img/camarao.jpg" class="card-img-top rounded" alt="comida ilustrativa">
 <div class="overlay-ia">
-  <button href="#" class="btn btn-success">
+  <a href="pagina2.html" class="btn btn-success">
     <i class="fa-regular fa-heart"></i>
-  </button>
+  </a>
 </div>
 </div>
 <div class="card-body">
@@ -189,19 +189,19 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i><br>
-        <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> R$42,80</button>
+        <a href="pagina2.html" class="btn btn-success my-3">
+          <i class="fa-solid fa-cart-shopping"></i> R$42,80</a>
   </div>
 </div>
     </div>
     <div class=" col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
-<img src="/src/risoto.jpg" class="card-img-top rounded" alt="comida ilustrativa">
+<img src="/src/img/risoto.jpg" class="card-img-top rounded" alt="comida ilustrativa">
 <div class="overlay-ia">
-  <button href="#" class="btn btn-success">
+  <a href="pagina2.html" class="btn btn-success">
     <i class="fa-regular fa-heart"></i>
-  </button>
+  </a>
 </div>
 </div>
 <div class="card-body">
@@ -212,19 +212,19 @@
         <i class="fa-regular fa-star"></i>
         <i class="fa-regular fa-star"></i>
         <i class="fa-regular fa-star"></i><br>
-        <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> R$36,99</button>
+        <a href="pagina2.html" class="btn btn-success my-3">
+          <i class="fa-solid fa-cart-shopping"></i> R$36,99</a>
   </div>
 </div>
     </div>
      <div class="col-sm-12 col-lg-4 pb-4">
    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded card-height" style="width: 20rem;">
 <div class="caixa-ia">
-<img src="/src/carne.jpg" class="card-img-top rounded" alt="comida ilustrativa">
+<img src="/src/img/carne.jpg" class="card-img-top rounded" alt="comida ilustrativa">
 <div class="overlay-ia">
-  <button href="#" class="btn btn-success">
+  <a href="pagina2.html" class="btn btn-success">
     <i class="fa-regular fa-heart"></i>
-  </button>
+  </a>
 </div>
 </div>
   <div class="card-body">
@@ -235,8 +235,8 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-regular fa-star"></i><br>
-        <button href="#" class="btn btn-success my-3">
-          <i class="fa-solid fa-cart-shopping"></i> R$32,45</button>
+        <a href="pagina2.html" class="btn btn-success my-3">
+          <i class="fa-solid fa-cart-shopping"></i> R$32,45</a>
           </div>
           </div>
           </div>
@@ -250,7 +250,7 @@
           <article class=" my-5 min-vh-100"  style="background-color: var(--bg3);">
             <div class="row d-flex grid justify-content-center align-items-center">
               <div class="col-sm-12 col-lg-6 text-center">
-                <img src="src/chef.jpg" alt="" class="mx-auto rounded-circle" style="max-width: 500px; border: 3px solid #f3e8c1;">
+                <img src="src/img/chef.jpg" alt="" class="mx-auto rounded-circle" style="max-width: 500px; border: 3px solid #f3e8c1;">
               </div>
               <div class="col-sm-12 col-lg-6">
                 <p class="h-fundo-escuro"><strong>Depoimentos</strong></p>
@@ -263,7 +263,7 @@
     <figure>
       <blockquote class="blockquote grid d-flex justify-content-center align-items-center">
         
-            <img src="src/mariana.jpg" alt="" class="img-fluid mx-3 rounded-circle">
+            <img src="src/img/mariana.jpg" alt="" class="img-fluid mx-3 rounded-circle">
       <p class="p-fundo-claro">Gente, essa feijoada é a coisa mais perfeita que já comi na vida! Parece que minha
                         avó ressuscitou só pra cozinhar pra mim. A carne seca derrete na boca e a couve… meu Deus, que couve é
                         essa?! Volto toda semana</p>
@@ -278,7 +278,7 @@
   <div class="card-body">
     <figure>
       <blockquote class="blockquote grid d-flex justify-content-center align-items-center">
-            <img src="src/joao.jpg" alt="" class="img-fluid mx-3 rounded-circle">
+            <img src="src/img/joao.jpg" alt="" class="img-fluid mx-3 rounded-circle">
       <p class="p-fundo-claro">Pedi o salmão tropical por curiosidade e agora tô viciado. O molho de maracujá com o
                         peixe na chapa é tipo um luau dentro do prato! Atendimento nota 10, entrega rapidinha e ainda mandaram um
                         bilhetinho escrito à mão.</p>
@@ -299,7 +299,7 @@
                   <figure>
                     <blockquote class="blockquote">
 
-                      <img src="src/mariana.jpg" alt="" class="img-fluid mx-3 rounded-circle">
+                      <img src="src/img/mariana.jpg" alt="" class="img-fluid mx-3 rounded-circle">
                       <p class="p-fundo-claro">Gente, essa feijoada é a coisa mais perfeita que já comi na vida! Parece que minha
                         avó ressuscitou só pra cozinhar pra mim. A carne seca derrete na boca e a couve… meu Deus, que couve é
                         essa?! Volto toda semana</p>
@@ -314,7 +314,7 @@
                 <div class="card-body">
                   <figure>
                     <blockquote class="blockquote">
-                      <img src="src/joao.jpg" alt="" class="img-fluid mx-3 rounded-circle">
+                      <img src="src/img/joao.jpg" alt="" class="img-fluid mx-3 rounded-circle">
                       <p class="p-fundo-claro">Pedi o salmão tropical por curiosidade e agora tô viciado. O molho de maracujá com o
                         peixe na chapa é tipo um luau dentro do prato! Atendimento nota 10, entrega rapidinha e ainda mandaram um
                         bilhetinho escrito à mão.</p>
@@ -345,7 +345,7 @@ Deixa seu palpite aqui embaixo!</p>
 </div>
       </div>
       <div class="col-sm-12 col-lg-6">
-      <img src="src/desenho.png" alt="" class="mx-auto pt-5 img-desenho">
+      <img src="src/img/desenho.png" alt="" class="mx-auto pt-5 img-desenho">
       </div>
     </div>
 </article>
