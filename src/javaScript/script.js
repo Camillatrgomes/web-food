@@ -19,23 +19,39 @@ function btnDark() {
     document.body.querySelector(".dark").disabled = true;
 }
 
+
 //timer contagem regressiva
-const getHours = () => {
-    const clock = document.getElementsByClassName("clock")[0]
-    
-    const date = new Date()
-    const hours = date.getHours()
-    const minutes = date.getMinutes()
-    const seconds = date.getSeconds()
-    const hour = hours < 10 ? `0${hours}` : hours 
-    const minute = minutes < 10 ? `0${minutes}` : minutes 
-    const second = seconds < 10 ? `0${seconds}` : seconds 
-    clock.innerHTML = ` ${hour}:${minutes}:${seconds}`
+
+const dataFinal = new Date('2025-12-22T23:59:59');
+
+function atualizarContagem(){
+    const agora = new Date();
+    const diferenca = dataFinal - agora;
+    const contadorElement = document.getElementById("contador")
+
+    if(diferenca < 0){
+        clearInterval(intervalo)
+        contadorElement.innerHTML = "Corre pra saber o prato principal, lá no instagram!";
+        return;
+    }
+
+const segundosTotais = Math.floor(diferenca / 1000);
+const minutosTotais = Math.floor(segundosTotais / 60);
+const horasTotais = Math.floor(minutosTotais / 60);
+const dias = Math.floor(horasTotais / 24);
+
+const segundos = segundosTotais % 60;
+const minutos = minutosTotais % 60;
+const horas = horasTotais % 24;
+
+const formatar = (num) => num.toString().padStart(2, "0");
+
+contadorElement.innerHTML = `${formatar(dias)} dias ${formatar(horas)} horas ${formatar(minutos)} minutos ${formatar(segundos)} segundos`;
 }
 
-setInterval(() => {
-    getHours()
-}, 1000)
+const intervalo = setInterval (atualizarContagem, 1000);
+atualizarContagem();
+
 
 
 //botão para o modal
@@ -50,5 +66,10 @@ function verificarTexto() {
 }
 }
 
+//Identificar o CEP
+async function verificarCEP() {
+const resposta = await fetch("")
+
+}
 
 

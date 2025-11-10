@@ -50,8 +50,8 @@ h2, h3{
 }
 
 .row {
-margin-top: 100px;
-margin-left:100px ;
+margin-top: 85px;
+margin-left:100px;
 margin-right: 100px;
 }
 
@@ -60,6 +60,10 @@ margin-top: 150px;
 margin-bottom: -30px;
 align-items: center;
 
+}
+
+#contador {
+    font-size: 25px;
 }
 
 header {
