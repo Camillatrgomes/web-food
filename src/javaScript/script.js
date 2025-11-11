@@ -67,8 +67,17 @@ function verificarTexto() {
 }
 
 //Identificar o CEP
-async function verificarCEP() {
-const resposta = await fetch("")
+
+const cep = document.getElementById("campoCep")
+const endereco = document.getElementById("logadouro")
+
+async function pegarDados() {
+try {
+    fetch('https://viacep.com.br/ws/`${cep}`/json/')
+    if(pegarDados) {
+        throw new error("error")
+    }
+}
 
 }
 
