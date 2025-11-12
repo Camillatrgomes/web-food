@@ -48,7 +48,6 @@ const formatar = (num) => num.toString().padStart(2, "0");
 
 contadorElement.innerHTML = `${formatar(dias)} dias ${formatar(horas)} horas ${formatar(minutos)} minutos ${formatar(segundos)} segundos`;
 }
-
 const intervalo = setInterval (atualizarContagem, 1000);
 atualizarContagem();
 
@@ -67,18 +66,40 @@ function verificarTexto() {
 }
 
 //Identificar o CEP
+async function buscarCep() {
+    const cepBRUTO = document.getElementById("campoCep");
 
-const cep = document.getElementById("campoCep")
-const endereco = document.getElementById("logadouro")
+    console.log(cepBRUTO);
+    console.log(cepBRUTO.value);
 
-async function pegarDados() {
-try {
-    fetch('https://viacep.com.br/ws/`${cep}`/json/')
-    if(pegarDados) {
-        throw new error("error")
-    }
+    const cep = cepBRUTO.value.trim();
+
+    const URL = `https://viacep.com.br/ws/${cep}/json/`;
+    
+    console.log(URL);
+    
+    try {
+        const resposta = await fetch(URL);
+        const resultadoAPI = await resposta.json();
+        console.log(resultadoAPI);
+
+        // Preenche o input com a rua
+        document.getElementById("enderecoInput").value = resultadoAPI.logradouro || "";
+
+    } catch (error) {
+        console.log(error);
+        }
 }
 
-}
+//botão para habilitar o cep
+function confirmarCep() {
+    const inputCep = document.getElementById ("campoCep");
+    const botaoCep = document.getElementById("btn");
 
+    if (inputCep.value.length > 0) {
+        botaoCep.disabled = false;
+} else {
+    botaoCep.disabled = true; 
+}
+}
 
