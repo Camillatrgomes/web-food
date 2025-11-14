@@ -62,15 +62,6 @@ align-items: center;
 
 }
 
-input, select, textarea{
-    border-left-color: rgb(219, 243, 212) !important;
-    box-shadow: rgba(251, 183, 141, 0.184) 0px 0px 0px 3.06918px !important;
-    border-right-color: rgb(219, 243, 212) !important;
-    border-top-color: rgb(219, 243, 212) !important;
-    border-bottom-color: rgb(219, 243, 212) !important;
-
-}
-
 #contador {
     font-size: 25px;
 }
