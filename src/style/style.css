@@ -103,13 +103,13 @@ height: 90%;
 .ml-n5 {
     margin-left: 30px;
 }
-.caixa-ia {
+.caixa-favorite {
 position: relative;
 display: inline-block;
  
 }
  
-.overlay-ia {
+.overlay-favorite {
 position: absolute;
 bottom: 10px;
 right: 10px;
@@ -122,7 +122,7 @@ font-family: Arial, sans-serif;
 z-index: 1;
 }
  
-.overlay-ia::after {
+.overlay-favorite::after {
 position: absolute;
 bottom: 100%;
 left: 50%;
@@ -142,7 +142,7 @@ z-index: 2;
 }
  
  
-.overlay-ia:hover::after {
+.overlay-favorite:hover::after {
 opacity: 1;
 visibility: visible;
 }
@@ -219,7 +219,7 @@ input:invalid, select:invalid {
         justify-content: center;
 
     }
-.overlay-ia::after {
+.overlay-favorite::after {
 display: none;
 }
 
